@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+h1, h2 {
+    font-family: 'Lora', serif;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 70px;
+}
+h1 a {
+    color: #333;
+}
+.post-date {
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #666;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+}
+nav {
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+nav ul {
+    text-transform: uppercase;
+    list-style-type: none;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lora', serif;
+    padding: 0px;
+}
+nav ul li {
+    display: block;
+    padding: 5px;
+}
+
+a:hover { color: #00ddff;}
+a {
+    text-decoration: none;
+    color: #666;
+}
+h1 a:hover {color: #333}
+
+@media only screen and (min-width: 35rem){
+    
+    nav ul {
+        margin: 1px;
+        text-align:end;
+    }
+    
+    nav ul li {
+        display: inline-flex;
+        padding: 0 5px;
+        align-items: flex-end;
+        font-size: 20px;
+    }
+   article { 
+        display: grid;
+        grid-template-columns: 25% 75%;
+        gap: 5px;
+    }
+    section {
+        border-bottom: 1px solid #666;
+
+    }
+   main {
+    margin-top: 20px;
+   }
+
+    .post-date {
+        border-right: 1px solid #666;
+        border-bottom: none;
+        padding:30px 5px 1px 40px;
+        
+    }
+    h2{
+        padding-top:30px;
+        margin:0px;
+    }
+}
